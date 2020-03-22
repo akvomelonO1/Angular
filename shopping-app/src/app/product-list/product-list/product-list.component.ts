@@ -30,7 +30,8 @@ export class ProductListComponent implements OnInit {
 
   // products = products;
 
-  share() {
+  share(event) {
     window.alert('The product has been shared!');
+    console.log(event);
   }
 }

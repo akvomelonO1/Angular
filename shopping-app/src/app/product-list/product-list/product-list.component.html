@@ -3,11 +3,13 @@
 <div *ngFor="let product of products">
   <!-- *ngFor=nos permite hacer un for en etiquetas recorriendo un array de elementos en el ts de este componente -->
   <h3>
-    <a [title]="product.name + ' details '"> <!-- bindeamos [] ese array que hemos recorrido antes -->
-      {{ product.name }} <!--  y aquí igual, podemos acceder a la propiedad dentro de ese array{{}} -->
+    <a [title]="product.name + ' details '">
+      <!-- bindeamos [] ese array que hemos recorrido antes -->
+      {{ product.name }}
+      <!--  y aquí igual, podemos acceder a la propiedad dentro de ese array{{}} -->
     </a>
   </h3>
-  <p *ngIf="product.description">
-      Descripción: {{product.description}}
-  </p>
+  <p *ngIf="product.description">Descripción: {{ product.description }}</p>
+
+  <button (click)="share($event)">Share</button>
 </div>
