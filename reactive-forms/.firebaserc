@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "sliderimage-df4b2": {
+      "hosting": {
+        "reactive-forms": [
+          "sliderimage-df4b2"
+        ]
+      }
+    }
+  }
+}
